@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#EFBBA7">
+    <TextView
+        android:id="@+id/texto2"
+        android:paddingRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:gravity="end"
+        android:text="">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:gravity="end"
+        android:paddingRight="40dp"
+        android:text="">
+
+    </TextView>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/raiz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:backgroundTint="#88753030"
+            android:text="√" />
+
+        <Button
+            android:id="@+id/cuadrado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:backgroundTint="#88753030"
+            android:text="x²" />
+        <Button
+            android:id="@+id/ac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:backgroundTint="#C57B7B"
+            android:text="AC" />
+        <Button
+            android:id="@+id/masmenos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:backgroundTint="#C57B7B"
+            android:text="+/-" />
+        <Button
+            android:id="@+id/porcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:backgroundTint="#C57B7B"
+            android:text="%" />
+
+        <Button
+            android:id="@+id/division"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:backgroundTint="#C57B7B"
+            android:text="/" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/potencial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#88753030"
+            android:text="^" />
+
+        <Button
+            android:id="@+id/cubo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#88753030"
+            android:text="x³" />
+        <Button
+            android:id="@+id/siete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A59A9A"
+            android:text="7" />
+        <Button
+            android:id="@+id/ocho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A59A9A"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/nueve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A59A9A"
+            android:text="9" />
+        <Button
+            android:id="@+id/multiplicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#C57B7B"
+            android:text="x" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/logaritmonatural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#88753030"
+            android:text="ln" />
+        <Button
+            android:id="@+id/tangente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#88753030"
+            android:text="tan" />
+        <Button
+            android:id="@+id/cuatro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A59A9A"
+            android:text="4" />
+        <Button
+            android:id="@+id/cinco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A59A9A"
+            android:text="5" />
+        <Button
+            android:id="@+id/seis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A59A9A"
+            android:text="6" />
+        <Button
+            android:id="@+id/resta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#C57B7B"
+            android:text="-" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/raizcubo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#88753030"
+            android:text="∛" />
+        <Button
+            android:id="@+id/pi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#88753030"
+            android:text="π" />
+        <Button
+            android:id="@+id/uno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A59A9A"
+            android:text="1" />
+        <Button
+            android:id="@+id/dos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A59A9A"
+            android:text="2" />
+        <Button
+            android:id="@+id/tres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A59A9A"
+            android:text="3" />
+        <Button
+            android:id="@+id/suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#C57B7B"
+            android:text="+" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/seno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#88753030"
+            android:text="sin" />
+        <Button
+            android:id="@+id/coseno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#88753030"
+            android:text="cos" />
+
+        <Button
+            android:id="@+id/cero"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:backgroundTint="#C57B7B"
+            android:textColor="@color/black"
+            android:text="0" />
+        <Button
+            android:id="@+id/coma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#C57B7B"
+            android:text="," />
+
+        <Button
+            android:id="@+id/igual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#DA4D4D"
+            android:text="=" />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
