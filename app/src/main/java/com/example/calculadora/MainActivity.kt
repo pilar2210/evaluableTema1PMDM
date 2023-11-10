@@ -7,6 +7,7 @@ import android.annotation.SuppressLint
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.View
 import android.view.View.OnClickListener
 import android.widget.TextView
@@ -17,13 +18,32 @@ import com.example.calculadora.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity(), OnClickListener {
     private lateinit var binding: ActivityMainBinding //declaramos la variable
     private var escritura: String = ""
+    private var resultado: String = ""
+
+    override fun onSaveInstanceState(outState: Bundle) {
+
+        if (outState != null) {
+            outState.putString("escritura", escritura)
+            outState.putString("resultado", resultado)
+
+            super.onSaveInstanceState(outState)
+        }
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
 
+        super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         //para rellenar llamamos a la variable
         setContentView(binding.root) //para rellenar llegamos a la variable
+        if(savedInstanceState != null){
+            escritura = savedInstanceState.getString("escritura").toString()
+            binding.texto1.text = escritura
+            resultado = savedInstanceState.getString("resultado").toString()
+            binding.texto2.text = resultado
+        }
+
 
         binding.division.setOnClickListener(this)
         binding.multiplicacion.setOnClickListener(this)
@@ -105,7 +125,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             }
 
             R.id.coma -> {
-                escritura += ","
+                escritura += "."
             }
 
             binding.raiz?.id -> {
@@ -247,6 +267,7 @@ class MainActivity : AppCompatActivity(), OnClickListener {
             }
         }
         binding.texto1.text = escritura
+        binding.texto2.text = resultado
 
 
     }
